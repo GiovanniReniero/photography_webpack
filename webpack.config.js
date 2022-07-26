@@ -85,6 +85,15 @@ module.exports ={
         }        
       ],
     }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src/slbox/*" ),
+          to: path.resolve(__dirname, "dist"),
+          context: "src",
+        }        
+      ],
+    }),
   ]  
 }
 
