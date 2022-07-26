@@ -1,5 +1,5 @@
 const path = require ("path")
-
+const htmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports ={
   entry: {
@@ -25,6 +25,43 @@ module.exports ={
       },
     ],
   },
-  
+  plugins:[
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/home.html"),
+      chunks:["home"],
+      inject: true,
+      filename:"home.html"
+    }),
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/about.html"),
+      chunks:["about"],
+      inject: true,
+      filename:"about.html"
+    }),
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/events.html"),
+      chunks:["events"],
+      inject: true,
+      filename:"events.html"
+    }),
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/Italy.html"),
+      chunks:["Italy"],
+      inject: true,
+      filename:"Italy.html"
+    }),
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/social.html"),
+      chunks:["social"],
+      inject: true,
+      filename:"social.html"
+    }),
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/theatre.html"),
+      chunks:["theatre"],
+      inject: true,
+      filename:"theatre.html"
+    }),
+  ]
 }
 
