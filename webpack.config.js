@@ -1,5 +1,6 @@
 const path = require ("path")
 const htmlWebpackPlugin = require("html-webpack-plugin")
+const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports ={
   entry: {
@@ -23,6 +24,10 @@ module.exports ={
         ],
         // use: ["style-loader", "css-loader" ],
       },
+      {
+        test: /.(png|jpg|jpeg|gif|webp|svg)$/,
+        type: "asset/resource"
+      }
     ],
   },
   plugins:[
@@ -62,6 +67,24 @@ module.exports ={
       inject: true,
       filename:"theatre.html"
     }),
-  ]
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src/images/*" ),
+          to: path.resolve(__dirname, "dist"),
+          context: "src",
+        }        
+      ],
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src/images/**" ),
+          to: path.resolve(__dirname, "dist/images"),
+          context: "src/images",
+        }        
+      ],
+    }),
+  ]  
 }
 
