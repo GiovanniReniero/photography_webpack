@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PicturesByGiovanni</title>
+
+  <!--LightBox-->
+  <link rel="stylesheet" href="css/simple-lightbox.min.css">
+  <!--Local Styling-->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <!--JavaScript-->
+  <script src="js/script.js" defer></script>
+</head>
+<body #id="home">
+  <div class="mega-grid mega-page">
+    <!--Navibar-->
+    <section class="navibarWrapper">
+      <nav class="flex container p-2">
+        <h2 class="text-primary lg big-shoulders" id="picturasdeljohn"> <span class="text-dark">PicturesBy</span> Giovanni</h2>
+        <ul class="flex">
+          <li class="big-shoulders mds"> <a  href="index.html">Home</a> </li>
+          <li class="big-shoulders mds"> 
+            <div class="dropdown " data-dropdown>
+              <a class="link" data-dropdown-link href="#">Work</a> 
+              <div class="dropdown-menu flex sm">
+                <a  href="theatre.html">Theatre</a>  
+                <a  href="social.html">Community & Social</a>
+                <a  href="events.html">Events</a>
+                  <div class="dropdown-travel" data-dropdown-travel>
+                    <a class="link" data-dropdown-link-travel href="#">Travel</a>
+                    <div class="dropdown-menu-travel flex sm">
+                      <a  href="Italy.html">Italy</a>
+                      <!-- <a  href="Belgium.html">Belgium</a> -->
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="big-shoulders mds "> <a  href="about.html">About/Contact</a> </li>
+        </ul>
+      </nav>
+    </section>
+    <div class="sub-grid">
+
+      <!--Events Gallery-->
+      <div class="description-container">
+        <div class="title-logo flex">
+          <h4 class=" text-center md big-shoulders p-2 "> Events</h4>
+          <!-- <img src="images/C2bK/C2bK_Logo small.png" id="C2bK" alt=""> -->
+        </div>
+        <p class="xsm cousine mx-5 text-center"> Essex County Council Sheriffs' Awards with "Cool to be Kind"
+        </p>
+      </div>
+      <section class="eventsGalleryWrap">
+        <div class="eventsGallery grid">
+          <a href="images/events/Sherrif_Award_1.jpg" class="big"><img src="images/events/Sherrif_Award_1.jpg" alt=""></a>
+          <a href="images/events/Sherrif_Award_2.jpg" class="big"><img src="images/events/Sherrif_Award_2.jpg" alt=""></a>
+          <a href="images/events/Sherrif_Award_3.jpg" class="big"><img src="images/events/Sherrif_Award_3.jpg" alt=""></a>
+          <a href="images/events/Sherrif_Award_4.jpg" class="big"><img src="images/events/Sherrif_Award_4.jpg" alt=""></a>
+          <a href="images/events/Sherrif_Award_5.jpg" class="big"><img src="images/events/Sherrif_Award_5.jpg" alt=""></a>
+          <a href="images/events/Sherrif_Award_6.jpg" class="big"><img src="images/events/Sherrif_Award_6.jpg" alt=""></a>
+          <a href="images/events/Sherrif_Award_7.jpg" class="big"><img src="images/events/Sherrif_Award_7.jpg" alt=""></a>
+          <a href="images/events/Sherrif_Award_8.jpg" class="big"><img src="images/events/Sherrif_Award_8.jpg" alt=""></a>
+          <a href="images/events/Sherrif_Award_9.jpg" class="big"><img src="images/events/Sherrif_Award_9.jpg" alt=""></a>
+          <!-- <a href="images/events/Sherrif_Award_10.jpg" class="big"><img src="images/events/Sherrif_Award_10.jpg" alt=""></a> -->
+          
+          
+        </div> 
+      </section>
+   
+    </div><!--Sub-Grid-->
+  </div> <!--Mega-Grid-->
+
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+      new SimpleLightbox('.eventsGallery a', { /* options */ });
+    </script>
+    
+  </body>
+  </html>
