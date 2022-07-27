@@ -1,11 +1,9 @@
 
 // Blurr the entire page
 
-const body = document.body
+// const body = document.body
 const containerAll = document.querySelector(".containerAll")
 const picsBy = document.querySelector(".picsBy ")
-
-
 
 repetitions = 0
 
