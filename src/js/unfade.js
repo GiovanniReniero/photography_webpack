@@ -12,12 +12,28 @@ const unblur = setInterval(() => {
   let scaleFilter = scale(repetitions, 0, 100, 25, 0)
   let scalePicsBy = scale(repetitions, 0, 100, 1, 0)
   containerAll.style.filter = `blur(${scaleFilter}px`
-  picsBy.style.opacity=`${scalePicsBy}`
+  // picsBy.style.opacity=`${scalePicsBy}`
   timeGuard()  
 }, 12);
 
+const unblurBis = setInterval(() => {
+  repetitions++
+  // let scaleFilter = scale(repetitions, 0, 100, 25, 0)
+  let scalePicsBy = scale(repetitions, 0, 100, 1, 0)
+  // containerAll.style.filter = `blur(${scaleFilter}px`
+  picsBy.style.opacity=`${scalePicsBy}`
+  timeGuardBis()  
+}, 1800);
+
+
+
 function timeGuard(){
   if (repetitions === 100 ){
+    clearInterval(unblur)
+  }
+}
+function timeGuardBis(){
+  if (repetitions === 3000 ){
     clearInterval(unblur)
   }
 }
