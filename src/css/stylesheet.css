@@ -20,6 +20,10 @@ body{
   background-color: var(--background-color);
 }
 
+.gio{
+  background-color: #333;
+}
+
 .containerAll{
   filter: blur(25px);
   position: relative;
@@ -32,7 +36,6 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
-
 
 .picsBy{
   text-align: center;
@@ -127,10 +130,6 @@ img {
   width: 100%;
 }
 
-/* #gioportrait{ */
-  /* min-width: 280px; */
-/* } */
-
 .about img{
   max-width: 40%;
   border-radius: 8px;
@@ -218,13 +217,12 @@ Navibar
   align-items: center;
 }
 
-.navibarWrapper {
+.navibarWrapper:not(#about) {
   background-color: var(--background-color);
-  /* position: sticky; */
-  /* position: -webkit-sticky; */
-  /* top: 0; */
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
 }
-
 
 nav ul li a:hover{
   color: var(--primary-color);
@@ -828,7 +826,7 @@ Margins and padding
   
   #picturasdeljohn {
     line-height: 1.2;
-   margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
 
