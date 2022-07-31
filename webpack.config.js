@@ -2,7 +2,13 @@ const path = require ("path")
 const htmlWebpackPlugin = require("html-webpack-plugin")
 const CopyPlugin = require("copy-webpack-plugin")
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const PurgeCSSPlugin = require('purgecss-webpack-plugin')
+const glob = require('glob')
 
+const PATHS = {
+  src: path.join(__dirname, 'src')
+}
 
 module.exports ={
   entry: {
@@ -22,9 +28,9 @@ module.exports ={
       {
         test:/.css$/,
         use: [
-          "style-loader", "css-loader"
+          MiniCssExtractPlugin.loader, "css-loader"
+          // "style-loader", "css-loader"
         ],
-        // use: ["style-loader", "css-loader" ],
       },
       {
         test: /.(png|jpg|jpeg|gif|webp|svg)$/,
@@ -33,6 +39,14 @@ module.exports ={
     ],
   },
   plugins:[
+
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    }),
+    new PurgeCSSPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+    }),
+    
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, "src/home.html"),
       chunks:["home"],
