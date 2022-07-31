@@ -25,13 +25,13 @@ module.exports ={
   },
   module: {
     rules:[
-      {
-        test:/.css$/,
-        use: [
-          MiniCssExtractPlugin.loader, "css-loader"
-          // "style-loader", "css-loader"
-        ],
-      },
+      // {
+      //   test:/.css$/,
+      //   use: [
+      //     // MiniCssExtractPlugin.loader, "css-loader"
+      //     "style-loader", "css-loader"
+      //   ],
+      // },
       {
         test: /.(png|jpg|jpeg|gif|webp|svg)$/,
         type: "asset/resource"
@@ -39,14 +39,7 @@ module.exports ={
     ],
   },
   plugins:[
-
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-    }),
-    new PurgeCSSPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
-    }),
-    
+       
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, "src/home.html"),
       chunks:["home"],
@@ -110,15 +103,12 @@ module.exports ={
         }        
       ],
     }),
-    // new BundleAnalyzerPlugin()
   ],  
   optimization:{
     splitChunks: {
       chunks: "all",
     },
   },
-  devServer: {
-    static: "./dist",
-  },
+ 
 }
 
