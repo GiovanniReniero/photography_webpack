@@ -12,7 +12,7 @@ const PATHS = {
 
 module.exports ={
   entry: {
-    home: "./src/index.js",
+    home: "./src/home.js",
     about: "./src/about.js",
     events: "./src/events.js",
     social: "./src/social.js",
