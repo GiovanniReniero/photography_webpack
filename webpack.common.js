@@ -25,13 +25,7 @@ module.exports ={
   },
   module: {
     rules:[
-      // {
-      //   test:/.css$/,
-      //   use: [
-      //     // MiniCssExtractPlugin.loader, "css-loader"
-      //     "style-loader", "css-loader"
-      //   ],
-      // },
+     
       {
         test: /.(png|jpg|jpeg|gif|webp|svg)$/,
         type: "asset/resource"
