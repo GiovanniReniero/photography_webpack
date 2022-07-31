@@ -1,4 +1,3 @@
 # Disregard folowing folders and files
 .vscode
 node_modules
-dist
