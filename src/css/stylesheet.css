@@ -567,13 +567,22 @@ Galleries
   grid-row: 15 /span 1;
 }
 .italyGalleryWrap .grid a:nth-child(21){
-  grid-column: 1/span 1;
+  grid-column: 3/span 1;
   grid-row: 16 /span 1;
 }
 .italyGalleryWrap .grid a:nth-child(22){
-  grid-column: 2/span 1;
-  grid-row: 16 /span 1;
+  grid-column: 3/span 1;
+  grid-row: 17 /span 1;
 }
+.italyGalleryWrap .grid a:nth-child(23){
+  grid-column: 1/span 2;
+  grid-row: 16 /span 2;
+}
+/* Madonna della Corona */
+.italyGalleryWrap .grid a:nth-child(24){ 
+  grid-column: 1/span 3;
+  grid-row: 14/span 1;
+} 
 
 /* Events Gallery */
 .eventsGalleryWrap .grid{
@@ -1138,9 +1147,19 @@ Margins and padding
     grid-row: 12/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(21){
-    grid-column: 1/span 3;
+    grid-column: 4/span 3;
+    grid-row: 12/span 1;
+  } 
+  .italyGalleryWrap .grid a:nth-child(23){
+    grid-column: 1/span 6;
     grid-row: 13/span 1;
   } 
+  /* Madonna della Corona */
+  .italyGalleryWrap .grid a:nth-child(24){ 
+    grid-column: 1/span 3;
+    grid-row: 14/span 1;
+  } 
+  
 
   /* Events Gallery maintains the same grid configuration as per mobile format */
 
