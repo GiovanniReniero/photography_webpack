@@ -563,19 +563,38 @@ Galleries
   grid-row: 14 /span 1;
 }
 .italyGalleryWrap .grid a:nth-child(20){
+  /* Ponte Pietra */
   grid-column: 1/span 3;
   grid-row: 15 /span 1;
 }
 .italyGalleryWrap .grid a:nth-child(21){
-  grid-column: 1/span 1;
+  /* Fontana piazza erbe */
+  grid-column: 3/span 1;
   grid-row: 16 /span 1;
 }
 .italyGalleryWrap .grid a:nth-child(22){
-  grid-column: 2/span 1;
-  grid-row: 16 /span 1;
+  /* Scala della ragione */
+  grid-column: 3/span 1;
+  grid-row: 17 /span 1;
+}
+.italyGalleryWrap .grid a:nth-child(24){ 
+  /* Madonna della Corona */
+  grid-column: 1/span 2;
+  grid-row: 16/span 3;
+}
+.italyGalleryWrap .grid a:nth-child(23){
+  /* Duomo di Milano */
+  grid-column: 1/span 2;
+  grid-row: 20 /span 2;
+}
+.italyGalleryWrap .grid a:nth-child(25){
+  /* Duomo Roof */
+  grid-column: 3/span 1;
+  grid-row: 18 /span 1;
 }
 
-/* Events Gallery */
+
+/******* Events Gallery *******/
 .eventsGalleryWrap .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1102,45 +1121,72 @@ Margins and padding
     grid-row: 6/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(20){
+    /* Ponte Pietra */
     grid-column: 1 /span 6;
     grid-row: 7/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(19){
+    /* Curva Adige su Ponte Pietra */
     grid-column: 1 /span 2;
     grid-row: 8/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(16){
+    /* Curva Adige su Ponte Pietra */
     grid-column: 3 /span 4;
     grid-row: 8/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(13){
+    /* Panoramica Castel S.Pietro */
     grid-column: 1 /span 6;
     grid-row: 9/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(12){
+    /* Panoramica castel S.Pietro */
     grid-column: 1 /span 2;
     grid-row: 10/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(17){
+    /* Panoramica castel S.Pietro */
     grid-column: 3 /span 4;
     grid-row: 10/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(22){
+    /* Scala della Ragione */
     grid-column: 1 /span 4;
     grid-row: 11/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(15){
+    /* Torre lamberti */
     grid-column: 5 /span 2;
     grid-row: 11/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(18){
-    grid-column: 1 /span 3;
+    /* Facce Fontana Piazza Erbe */
+    grid-column: 4 /span 3;
     grid-row: 12/span 1;
   } 
   .italyGalleryWrap .grid a:nth-child(21){
-    grid-column: 1/span 3;
+    /* Donna Fontana  Piazza Erbe */
+    grid-column: 4/span 3;
     grid-row: 13/span 1;
   } 
+ 
+  .italyGalleryWrap .grid a:nth-child(24){ 
+    /* Madonna della Corona */
+    grid-column: 1/span 3;
+    grid-row: 12/span 2;
+  } 
+  .italyGalleryWrap .grid a:nth-child(23){
+    /* Duomo di Milano */
+    grid-column: 1/span 6;
+    grid-row: 15/span 1;
+  }  
+
+  .italyGalleryWrap .grid a:nth-child(25){
+    /* Duomo Roof */
+    grid-column: 1/span 3;
+    grid-row: 16/span 1;
+  }  
 
   /* Events Gallery maintains the same grid configuration as per mobile format */
 
